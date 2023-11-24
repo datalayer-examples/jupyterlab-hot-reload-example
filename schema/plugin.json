@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@datalayer/jupyterlab-hot-reload",
+  "description": "@datalayer/jupyterlab-hot-reload settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
