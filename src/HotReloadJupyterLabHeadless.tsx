@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Box, Label, Text, Link } from '@primer/react';
-import { PageHeader } from '@primer/react/drafts';
+import { PageHeader } from '@primer/react/experimental';
 import { GitPullRequestIcon } from '@primer/octicons-react';
 import { IRunningSessionManagers } from '@jupyterlab/running';
 import { Jupyter, JupyterLabApp } from '@datalayer/jupyter-react';

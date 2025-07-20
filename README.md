@@ -9,7 +9,7 @@
 ## Hot Reload with JupyterLab
 
 ```bash
-yarn start
+npm start
 ```
 
 <div align="center" style="text-align: center">
@@ -19,7 +19,7 @@ yarn start
 ## Hot Reload and HMR (Hot Module Replacement) with JupyterLab Headless
 
 ```bash
-yarn start:hmr
+npm start:hmr
 ```
 
 <div align="center" style="text-align: center">
@@ -29,10 +29,10 @@ yarn start:hmr
 ## Develop
 
 ```bash
-yarn && yarn build
+npm && npm run build
 pip install -e .[test]
 jupyter labextension develop . --overwrite
 jupyter labextension list
 jupyter server extension list
-yarn jupyterlab
+npm jupyterlab
 ```
