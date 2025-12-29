@@ -11,8 +11,10 @@ import '../../style/index.css';
 
 export type IJupyterLabHotReload = {};
 
+export const JUPYTERLAB_HOT_RELOAD_PLUGIN_ID = '@datalayer/jupyterlab-hot-reload:plugin';
+
 export const IJupyterLabHotReload = new Token<IJupyterLabHotReload>(
-  '@datalayer/jupyterlab-hot-reload:plugin'
+  JUPYTERLAB_HOT_RELOAD_PLUGIN_ID
 );
 
 /**

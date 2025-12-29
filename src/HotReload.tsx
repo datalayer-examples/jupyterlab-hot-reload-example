@@ -7,7 +7,7 @@ export type HotReloadProps = {
   runningSessionManagers: IRunningSessionManagers;
 }
 
-const JupyterLabHotReload = (props: HotReloadProps) => {
+export const JupyterLabHotReload = (props: HotReloadProps) => {
   const { runningSessionManagers } = props;
   const [runningSessions, setRunningSessions] = useState<RunningSessions>();
   useEffect(() => {

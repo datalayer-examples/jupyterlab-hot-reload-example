@@ -6,12 +6,13 @@ import { PageHeader } from '@primer/react';
 import { GitPullRequestIcon } from '@primer/octicons-react';
 import { IRunningSessionManagers } from '@jupyterlab/running';
 import { Jupyter, JupyterLabApp } from '@datalayer/jupyter-react';
-import HotReload from './HotReload';
+import { JupyterLabHotReload } from './HotReload';
 
 import * as lightThemeExtension from '@jupyterlab/theme-light-extension';
 import * as runningExtension from '@jupyterlab/running-extension';
 import * as collaborationExtension from '@jupyter/collaboration-extension';
 import * as datalayerRunningSessions from './jupyterlab/index';
+import { JUPYTERLAB_HOT_RELOAD_PLUGIN_ID } from './jupyterlab/index';
 // import * as jupyterlabRunningSessions from '@jupyterlab/running-extension';
 
 const ThemeGlobalStyle = createGlobalStyle<any>`
@@ -53,7 +54,7 @@ const JupyterLabHeadless = () => {
       <Box m={3}>
         <Header/>
       </Box>
-      { plugin && <HotReload runningSessionManagers={plugin}/> }
+      { plugin && <JupyterLabHotReload runningSessionManagers={plugin}/> }
       <JupyterLabApp
         plugins={[
           lightThemeExtension,
@@ -64,9 +65,7 @@ const JupyterLabHeadless = () => {
         ]}
         headless={true}
         mimeRenderers={[]}
-//        pluginId="@jupyterlab/running-extension:plugin"
-//        PluginType={IRunningSessionManagers}
-        pluginId="@jupyterlab/running-extension:plugin"
+        pluginId={JUPYTERLAB_HOT_RELOAD_PLUGIN_ID}
         PluginType={IRunningSessionManagers}
         onPlugin={onPlugin}
       />
