@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { Box, Label, Text, Link } from '@primer/react';
+import { Label, Text, Link } from '@primer/react';
+import { Box } from '@datalayer/primer-addons';
 import { PageHeader } from '@primer/react';
 import { GitPullRequestIcon } from '@primer/octicons-react';
 import { IRunningSessionManagers } from '@jupyterlab/running';
@@ -11,6 +12,7 @@ import * as lightThemeExtension from '@jupyterlab/theme-light-extension';
 import * as runningExtension from '@jupyterlab/running-extension';
 import * as collaborationExtension from '@jupyter/collaboration-extension';
 import * as datalayerRunningSessions from './jupyterlab/index';
+// import * as jupyterlabRunningSessions from '@jupyterlab/running-extension';
 
 const ThemeGlobalStyle = createGlobalStyle<any>`
   body {
@@ -58,9 +60,12 @@ const JupyterLabHeadless = () => {
           runningExtension,
           collaborationExtension,
           datalayerRunningSessions,
+//          jupyterlabRunningSessions,
         ]}
         headless={true}
         mimeRenderers={[]}
+//        pluginId="@jupyterlab/running-extension:plugin"
+//        PluginType={IRunningSessionManagers}
         pluginId="@jupyterlab/running-extension:plugin"
         PluginType={IRunningSessionManagers}
         onPlugin={onPlugin}

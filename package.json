@@ -70,6 +70,7 @@
     "@datalayer/primer-addons": "^1.0.4",
     "@jupyterlab/running-extension": "^4.0.0",
     "@jupyter/collaboration-extension": "^3.0.0",
+    "@primer/react": "^37.19.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-is": "^18.2.0",

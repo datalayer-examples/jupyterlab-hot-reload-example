@@ -10,6 +10,8 @@ node_modules/
 *.tsbuildinfo
 jupyterlab_hot_reload/labextension
 
+package-lock.json
+
 # Version file is handled by hatchling
 jupyterlab_hot_reload/_version.py
 

@@ -8,6 +8,7 @@
 
 ```bash
 npm i
+# open http://localhost:3063
 npm run start
 ```
 
@@ -18,6 +19,8 @@ npm run start
 ## Hot Reload and HMR (Hot Module Replacement) with JupyterLab Headless
 
 ```bash
+npm i
+# open http://localhost:3063
 npm run start:hmr
 ```
 
