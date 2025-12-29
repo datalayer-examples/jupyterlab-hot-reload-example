@@ -72,6 +72,7 @@ const plugin: JupyterFrontEndPlugin<IJupyterLabHotReload> = {
         rank: 1.1,
       });
     }
+    /*
     if (settingRegistry) {
       settingRegistry
         .load(plugin.id)
@@ -82,6 +83,7 @@ const plugin: JupyterFrontEndPlugin<IJupyterLabHotReload> = {
           console.error('Failed to load settings for @datalayer/jupyterlab-hot-reload.', reason);
         });
     }
+    */
     return {};
   }
 };

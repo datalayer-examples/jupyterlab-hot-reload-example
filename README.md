@@ -4,12 +4,11 @@
 
 # 🪐 JupyterLab Hot Reload Example
 
-> JupyterLab Hot Reload Example.
-
 ## Hot Reload with JupyterLab
 
 ```bash
-npm start
+npm i
+npm run start
 ```
 
 <div align="center" style="text-align: center">
@@ -19,7 +18,7 @@ npm start
 ## Hot Reload and HMR (Hot Module Replacement) with JupyterLab Headless
 
 ```bash
-npm start:hmr
+npm run start:hmr
 ```
 
 <div align="center" style="text-align: center">

@@ -12,13 +12,13 @@ const JupyterLabComponent = () => {
   }
   return (
     <JupyterLabApp
-      extensions={[
+      plugins={[
         lightThemeExtension,
         collaborationExtension,
         runningExtension,
         datalayerRunningSessions,
       ]}
-      mimeExtensions={[]}
+      mimeRenderers={[]}
       onJupyterLab={onJupyterLab}
       position="absolute"
       height="100vh"

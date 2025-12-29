@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Lumino } from "@datalayer/jupyter-react/lib/jupyter/lumino/Lumino";
-import { Box } from "@primer/react";
+import { Lumino } from "@datalayer/jupyter-react";
+import { Box } from "@datalayer/primer-addons";
 import { IRunningSessionManagers, RunningSessions } from '@jupyterlab/running';
 
 export type HotReloadProps = {

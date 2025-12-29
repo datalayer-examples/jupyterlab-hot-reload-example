@@ -65,11 +65,11 @@
     "watch:src": "tsc -w"
   },
   "dependencies": {
-    "@datalayer/icons-react": "^1.0.0",
-    "@datalayer/jupyter-react": "^1.0.1",
-    "@datalayer/primer-addons": "^1.0.3",
-    "mobx": "^6.10.0",
-    "mobx-react": "^9.0.0",
+    "@datalayer/icons-react": "^1.0.7",
+    "@datalayer/jupyter-react": "^1.2.3",
+    "@datalayer/primer-addons": "^1.0.4",
+    "@jupyterlab/running-extension": "^4.0.0",
+    "@jupyter/collaboration-extension": "^3.0.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-is": "^18.2.0",
@@ -94,6 +94,7 @@
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "babel-loader": "^9.1.2",
+    "buffer": "^6.0.3",
     "css-loader": "^6.9.1",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^10.1.2",
@@ -155,5 +156,27 @@
         "jlpm clean:all"
       ]
     }
+  },
+  "resolutions": {
+    "@microsoft/fast-colors": "5.3.1",
+    "@microsoft/fast-components": "2.30.6",
+    "@microsoft/fast-element": "1.13.0",
+    "@microsoft/fast-foundation": "2.49.6",
+    "@microsoft/fast-react-wrapper": "0.3.24",
+    "@microsoft/fast-web-utilities": "5.4.1",
+    "@microsoft/load-themed-styles": "1.10.295",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6"
+  },
+  "overrides": {
+    "@microsoft/fast-colors": "5.3.1",
+    "@microsoft/fast-components": "2.30.6",
+    "@microsoft/fast-element": "1.13.0",
+    "@microsoft/fast-foundation": "2.49.6",
+    "@microsoft/fast-react-wrapper": "0.3.24",
+    "@microsoft/fast-web-utilities": "5.4.1",
+    "@microsoft/load-themed-styles": "1.10.295",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6"
   }
 }

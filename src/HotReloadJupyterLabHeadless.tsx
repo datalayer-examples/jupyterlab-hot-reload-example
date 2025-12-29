@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { Box, Label, Text, Link } from '@primer/react';
-import { PageHeader } from '@primer/react/experimental';
+import { PageHeader } from '@primer/react';
 import { GitPullRequestIcon } from '@primer/octicons-react';
 import { IRunningSessionManagers } from '@jupyterlab/running';
 import { Jupyter, JupyterLabApp } from '@datalayer/jupyter-react';
@@ -25,7 +25,7 @@ const Header = () => (
       <PageHeader.LeadingVisual>
         <GitPullRequestIcon />
       </PageHeader.LeadingVisual>
-      <PageHeader.Title>Title</PageHeader.Title>
+      <PageHeader.Title>JupyterLab Hot Reload</PageHeader.Title>
       <PageHeader.TrailingVisual>
         <Label>Beta</Label>
       </PageHeader.TrailingVisual>
@@ -35,7 +35,7 @@ const Header = () => (
         <Link href="#" muted sx={{fontWeight: 'bold'}}>
           echarles
         </Link>{' '}
-        created this branch 4 days ago · 13 commits · updated today
+        created this project ... days ago · ... commits · updated ...
       </Text>
     </PageHeader.Description>
   </PageHeader>
@@ -53,14 +53,14 @@ const JupyterLabHeadless = () => {
       </Box>
       { plugin && <HotReload runningSessionManagers={plugin}/> }
       <JupyterLabApp
-        extensions={[
+        plugins={[
           lightThemeExtension,
           runningExtension,
           collaborationExtension,
           datalayerRunningSessions,
         ]}
         headless={true}
-        mimeExtensions={[]}
+        mimeRenderers={[]}
         pluginId="@jupyterlab/running-extension:plugin"
         PluginType={IRunningSessionManagers}
         onPlugin={onPlugin}
