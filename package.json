@@ -67,7 +67,7 @@
   "dependencies": {
     "@datalayer/icons-react": "^1.0.7",
     "@datalayer/jupyter-react": "^1.2.3",
-    "@datalayer/primer-addons": "^1.0.4",
+    "@datalayer/primer-addons": "^1.0.23",
     "@jupyterlab/running-extension": "^4.0.0",
     "@jupyter/collaboration-extension": "^3.0.0",
     "@primer/react": "^37.19.0",
